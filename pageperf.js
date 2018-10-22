@@ -684,7 +684,7 @@ if (data.perfTiming.loadEventEnd - data.perfTiming.navigationStart < 0) {
 data.allResourcesCalc = data.resources
 //remove this bookmarklet from the result
 .filter(function (currR) {
-	return !currR.name.match(/http[s]?\:\/\/(micmro|nurun).github.io\/performance-bookmarklet\/.*/);
+	return !currR.name.match(/http[s]?\:\/\/(ashetty).github.io\/performance-bookmarklet\/.*/);
 }).map(function (currR, i, arr) {
 	//crunch the resources data into something easier to work with
 	var isRequest = currR.name.indexOf("http") === 0;
